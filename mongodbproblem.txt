@@ -1,0 +1,26 @@
+db.employee.aggregate(
+[
+	{
+		$match: {
+			designation: "developer"
+		}
+	}, 
+	{
+		$project: {
+			name: 1,
+			salary: 1,
+			_id: 0
+		}
+	}, 
+	{
+		$sort: {
+			salary: -1
+		}
+	}, 
+	{
+		$limit: 2
+	}, 
+	{
+		$skip: 1
+	}
+])
