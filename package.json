@@ -9,7 +9,7 @@
   "author": "Aro",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "fs": "0.0.1-security",
     "winston": "^3.3.3"
   }
